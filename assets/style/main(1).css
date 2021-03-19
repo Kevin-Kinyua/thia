@@ -1,0 +1,434 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #8968CD;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    font-size: larger;
+}
+ 
+.header button {
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+    border-color: white;
+    background-color: white;
+    color: #8968CD;
+    font-weight: bolder;
+}
+
+.logo button {
+    width: 70px;
+    text-decoration: bold;
+    background-color: #9370DB;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.get_started {
+    display: grid;
+    grid-template-columns: 1;
+}
+
+.get_started button {
+    width: 100px;
+    border-radius: 3px;
+    justify-self: center;
+    height: 35px;
+    width: 100px;
+    border-color: white;
+    background-color: white;
+    color: #8968CD;
+    font-weight: bolder;
+}
+
+.slider_one img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}
+
+.what_we_do{
+    background-color:  #9370DB;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    width: auto;
+}
+
+.what_we_do h2 {
+    text-align: center;
+    margin: 10px;
+    font-weight: bolder;
+    padding-bottom: 15px; 
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.features {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: "feature feature feature feature"
+    "feature_1 feature_2 feature_3 feature_4";
+    margin-bottom: 400px                    ;
+}
+
+.feature_1 {
+    color: black;
+    grid-area: feature_1;
+    background-color:  #9370DB;
+    height: 400px;
+}
+.feature_2 {
+    color: red;
+    grid-area: feature_2;
+    background-color:  #9370DB;
+
+}
+
+.feature_4 {
+    color: yellow;
+    grid-area: feature_4;
+    background-color:  #9370DB;
+
+}
+.feature_3 {
+    color: white;
+    grid-area: feature_3;
+    background-color:  #9370DB;
+}
+
+.features h2 {
+    color: #9370DB;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-left: 200%;
+    grid-area: feature;
+    margin-bottom: 20px;
+
+}
+
+.main_footer {
+    background-color: #9370DB;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: "company_details company_links email_list";
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.company_details {
+    grid-area: company_details;
+}
+
+.company_links {
+    grid-area: company_links;
+}
+
+.email_list {
+    grid-area: email_list;
+}
+
+.copyright {
+    grid-area: copyright;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.signup_form {
+    background-image: url(/assests/images/signup_background.JPG);
+    background-repeat: no-repeat center;
+    background-position: center;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 25%;
+    height: 650px;
+    width: 650px;
+    background-color: white;
+    border:3px solid #9370DB;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "signup signup"
+                         "fullname fullname"
+                         "email phone_number"
+                         "password password"
+                         "confirm_password confirm_password"
+                         "confirm terms"
+                         "submit submit";
+}
+
+.signup_form h4 {
+    color: #9370DB;
+    font-size: larger;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-area: signup;
+    
+}
+
+#fullname {
+    width: 80%;
+    grid-area: fullname;
+    margin-left: 65px;
+    height: 40px;
+    border: 2px solid #9370DB;
+
+}
+
+#email {
+    width: 80%;
+    margin-left: 65px;
+    height: 40px;
+    grid-area: email;
+    border: 2px solid #9370DB;
+
+}
+
+#phone_number {
+    width: 73%;
+    margin-left: 0px;
+    height: 40px;
+    grid-area: phone_number;
+    border: 2px solid #9370DB;
+
+}
+
+#password {
+    width: 80%;
+    margin-left: 65px;
+    height: 40px;
+    grid-area: password;
+}
+
+#confirm_password {
+    width: 80%;
+    margin-left: 65px;
+    height: 40px;
+    grid-area: confirm_password;
+}
+
+
+#confirm {
+    grid-area: confirm;
+    margin-left: 65px;
+
+}
+
+#terms {
+    grid-area: terms;
+    
+}
+
+#submit {
+    grid-area: submit;
+    margin-right: 100px;
+}
+
+input[type=submit] {
+    width: 150px;
+    height: 40px;
+    margin-left: 250px;
+    color: white;
+    background-color: #9370DB;
+    border-radius: 3px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+input[type=password] {
+    border: 2px solid #9370DB;
+}
+
+.coloser {
+    background-color: #9370DB;
+    margin-top: 30px;
+    height: 50px;
+}
+
+.copyright_footer{
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+    
+}
+
+.login_form {
+    background-image: url(/assests/images/signup_background.JPG);
+    background-repeat: no-repeat center;
+    background-position: center;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 25%;
+    height: 650px;
+    width: 650px;
+    background-color: white;
+    border:3px solid #9370DB;
+ 
+}
+
+.login_form h4 {
+    color: #9370DB;
+    font-size: larger;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    grid-area: signup;
+    
+}
+
+.login_form #email {
+    margin-bottom: 30px;
+}
+
+.login_form #password {
+    margin-bottom: 30px;
+}
+
+#remember_me {
+    margin-left: 65px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.remember {
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.forgot {
+    float: right;
+    margin-right: 65px;
+}
+
+.login_form #login {
+    float: right;
+    margin-right: 65px;
+    margin-top: 20px;
+}
+
+.header_dash .username {
+    float: right;
+    width: 100px;
+    border-radius: 3px;
+    justify-self: center;
+    height: 35px;
+    width: 100px;
+    border-color: white;
+    background-color: white;
+    color: #8968CD;
+    font-weight: bolder;
+    border-radius: 30px;
+}
+
+.header_dash{
+    background-color: #8968CD;
+    width: 100%;
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    font-size: larger;
+}
+
+.header_dash .logo{
+    float: left;
+}
+
+.left_side {
+    background-color: #9370DB;
+    color: white;
+    grid-area: left_side;
+
+}
+
+.left_side ul li {
+    margin-bottom: 10px;
+    background-color: #8968CD ;
+    border: solid 1px white;
+}
+
+.info {
+    background-color: #948B8B;
+    height: 80px;
+    width: 180px;
+    border: solid 2px #8968CD;
+    grid-area: info;
+}
+
+.the_info{
+    border: solid 2px #8968CD;
+    grid-area: the_info;
+}
+
+.info_1{
+    height: 80px;
+    width: 180px;
+    border: solid 2px #8968CD; 
+    grid-area: info_1;
+}
+
+.info_2{
+    height: 80px;
+    width: 180px;
+    border: solid 2px #8968CD; 
+    grid-area: info_2;
+    justify-self: start;
+}
+
+.info_3{
+    height: 80px;
+    width: 180px;
+    border: solid 2px #8968CD; 
+    grid-area: info_3;
+    justify-self: end;
+}
+
+.chart_info img {
+    grid-area: chart_info;
+    justify-self: center;
+    margin-left: 60%;
+    margin-top: 40px;
+}
+
+.right_side{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "info the_info the_info"
+                          "info_1 info_2 info_3"
+                          "chart_info chart_info chart_info";
+    grid-gap: 20px;
+    margin: 40px;
+    grid-area: right_side;
+}
+
+.main_dashbaord {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: "left_side right_side right_side right_side right_side right_side right_side right_side right_side right_side ";
+}
+
+.left_side .the_dashbaord{
+    background-color: white;
+    color: #8968CD;
+    border: solid 2px #8968CD;
+}

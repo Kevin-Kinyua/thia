@@ -1,0 +1,154 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.header {
+    background-color: #8968CD;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    font-size: larger;
+}
+ 
+.header button {
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+    border-color: white;
+    background-color: white;
+    color: #8968CD;
+    font-weight: bolder;
+}
+
+.logo button {
+    width: 70px;
+    text-decoration: bold;
+    background-color: #9370DB;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.get_started {
+    display: grid;
+    grid-template-columns: 1;
+}
+
+.get_started button {
+    width: 100px;
+    border-radius: 3px;
+    justify-self: center;
+    height: 35px;
+    width: 100px;
+    border-color: white;
+    background-color: white;
+    color: #8968CD;
+    font-weight: bolder;
+}
+
+.slider_one img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}
+
+.what_we_do{
+    background-color:  #9370DB;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    width: auto;
+}
+
+.what_we_do h2 {
+    text-align: center;
+    margin: 10px;
+    font-weight: bolder;
+    padding-bottom: 15px; 
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.features {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: "feature feature feature feature"
+    "feature_1 feature_2 feature_3 feature_4";
+    margin-bottom: 400px                    ;
+}
+
+.feature_1 {
+    color: black;
+    grid-area: feature_1;
+    background-color:  #9370DB;
+    height: 400px;
+}
+.feature_2 {
+    color: red;
+    grid-area: feature_2;
+    background-color:  #9370DB;
+
+}
+
+.feature_4 {
+    color: yellow;
+    grid-area: feature_4;
+    background-color:  #9370DB;
+
+}
+.feature_3 {
+    color: white;
+    grid-area: feature_3;
+    background-color:  #9370DB;
+}
+
+.features h2 {
+    color: #9370DB;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-left: 200%;
+    grid-area: feature;
+    margin-bottom: 20px;
+
+}
+
+.main_footer {
+    background-color: #9370DB;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: "company_details company_links email_list";
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.company_details {
+    grid-area: company_details;
+}
+
+.company_links {
+    grid-area: company_links;
+}
+
+.email_list {
+    grid-area: email_list;
+}
+
+.copyright {
+    grid-area: copyright;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}

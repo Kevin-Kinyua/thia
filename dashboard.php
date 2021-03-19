@@ -6,11 +6,6 @@
     <title>THIA inc.</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
 
 </head>
 <body>
@@ -34,12 +29,12 @@ include_once "./dashboard-header.php"
             <a href="#" onclick="openPage('investments')">Investments</a>
             <a href="#" onclick="openPage('reports')">Reports</a>
             <a href="#" onclick="openPage('settings')">Settings</a>
-            <a href="#" onclick="openPage('contact')">Contact</a>
+<!--            <a href="#" onclick="openPage('contact')">Contact</a>-->
         </div>
 
         <script>
             function openNav() {
-                document.getElementById("mySidenav").style.width = "200px";
+                document.getElementById("mySidenav").style.width = "180px";
             }
 
             function closeNav() {
@@ -47,63 +42,64 @@ include_once "./dashboard-header.php"
             }
         </script>
 
-        <section id="dashboard">
-            <div  id="overlay" class="dashboard-content" >
+        <section id="dashboard" class="dashboard-content" >
+            <div  id="overlay" >
                 <br>
                 <br>
 
 
-                <div class="w3-container">
-<!--                    <h2>Tabs</h2>-->
-<!--                    <p>Tabs are perfect for single page web applications, or for web pages capable of displaying different subjects. Click on the links below.</p>-->
+
+
+                <div id="dashboard" class="w3-container  page" >
+                    <h2>Dashboard</h2>
+                    <p>Some text</p>
                 </div>
 
-                <div class="w3-bar w3-black">
-                    <button class="w3-bar-item w3-button" onclick="openPage('London')">London</button>
-                    <button class="w3-bar-item w3-button" onclick="openPage('Paris')">Paris</button>
-                    <button class="w3-bar-item w3-button" onclick="openPage('Tokyo')">Tokyo</button>
-
+                <div id="wallet" class="w3-container page" style="display:none;  ">
+                    <h2 >Wallet</h2>
+                    <!--<?php
+                    include_once "./wallet.php"
+                    ?>-->
                 </div>
 
-                <div id="London" class="w3-container page" >
-                    <h2>London</h2>
-                    <p>London is the capital city of England.</p>
+                <div id="deposit" class="w3-container page" style="display:none;  ">
+                    <h2 >Deposit</h2>
+                    <p>some text</p>
                 </div>
 
-                <div id="Paris" class="w3-container page" style="display:none;">
-                    <h2>Paris</h2>
-                    <p>Paris is the capital of France.</p>
+                <div id="withdraw" class="w3-container page" style="display:none;  ">
+                    <h2 >Withdraw</h2>
+                    <p>some text</p>
                 </div>
 
-                <div id="Tokyo" class="w3-container page" style="display:none;  ">
-                    <h2 >Tokyo</h2>
-                    <p>Tokyo is the capital of Japan.</p>
+                <div id="members" class="w3-container page" style="display:none;  ">
+                    <h2 >Members</h2>
+                    <p>some text</p>
                 </div>
+                <div id="loans" class="w3-container page" style="display:none;  ">
+                    <h2 >Loans</h2>
+                    <p>some text</p>
+                </div>
+                <div id="clients" class="w3-container page" style="display:none;  ">
+                    <h2 >Clients</h2>
+                    <p>some text</p>
+                </div>
+                <div id="messaging" class="w3-container page" style="display:none;  ">
+                    <h2 >Messaging</h2>
+                    <p>some text</p>
+                </div>
+                <div id="investments" class="w3-container page" style="display:none;  ">
+                    <h2 >Investments</h2>
+                    <p>some text</p>
+                </div>
+                <div id="reports" class="w3-container page" style="display:none;  ">
+                    <h2 >Reports</h2>
+                    <p>some text</p>
+                </div>
+                <div id="settings" class="w3-container page" style="display:none;  ">
+                    <h2 >Settings</h2>
+                    <p>some text</p>
 
-                <div id="Tokyo" class="w3-container page" style="display:none;  ">
-                    <h2 >Tokyo</h2>
-                    <p>Tokyo is the capital of Japan.</p>
-                </div>
-
-                <div id="Tokyo" class="w3-container page" style="display:none;  ">
-                    <h2 >Tokyo</h2>
-                    <p>Tokyo is the capital of Japan.</p>
-                </div>
-
-                <div id="Tokyo" class="w3-container page" style="display:none;  ">
-                    <h2 >Tokyo</h2>
-                    <p>Tokyo is the capital of Japan.</p>
-                </div>
-
-                <div id="Tokyo" class="w3-container page" style="display:none;  ">
-                    <h2 >Tokyo</h2>
-                    <p>Tokyo is the capital of Japan.</p>
-                </div>
-
-                <div id="Tokyo" class="w3-container page" style="display:none;  ">
-                    <h2 >Tokyo</h2>
-                    <p>Tokyo is the capital of Japan.</p>
-                </div>
 
                 <script>
                     function openPage(pageName) {

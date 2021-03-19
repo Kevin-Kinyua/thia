@@ -6,86 +6,118 @@
     <title>THIA inc.</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
-
-</head>
-<body>
-<div id="page-container">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.cs
     <?php
     include_once "./header.php"
     ?>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+    display: table;
+    clear: both;
+    }
+
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+    .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    }
+    }
+
+    /* Style the counter cards */
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    }
+    </style>
+</head>
+<body>
+
+<div id="page-container">
+
     <div id="content-wrap">
-        <!-- CAROUSEL--
-        <section class="carousel">
-            <div class="slideshow-container">
+        <!-- CAROUSEL-->
+        <div class="slideshow-container">
 
-                <div class="mySlides fade">
-                    <img src="assets\images\carousel\peak.jpg" style="width:100%">
-                    <div class="text">Caption Text</div>
-                </div>
+    <div class="mySlides fade">
+      <img src="assets/images/carousel/monitor%20growth.jpg" style="width:100%; max-height: 400px;">
+      <div class="text">Caption Text</div>
+    </div>
 
-                <div class="mySlides fade">
-                    <img src="assets\images\carousel\workspace.jpg" style="width:100%">
-                    <div class="text">Caption Two</div>
-                </div>
+    <div class="mySlides fade">
+      <img src="assets/images/carousel/workspace.jpg" style="width:100%;max-height: 400px;">
+      <div class="text">Caption Two</div>
+    </div>
 
-                <div class="mySlides fade">
-                    <img src="assets\images\carousel\calculate.jpg" style="width:100%">
-                    <div class="text">Caption Three</div>
-                </div>
+    <div class="mySlides fade">
+      <img src="assets/images/carousel/reports.jpg" style="width:100%;max-height: 400px;">
+      <div class="text">Caption Three</div>
+    </div>
 
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-            </div>
-            <br>
+    </div>
+    <br>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
 
-            <script>
-                var slideIndex = 1;
-                showSlides(slideIndex);
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
-                function plusSlides(n) {
-                    showSlides(slideIndex += n);
-                }
-
-                function currentSlide(n) {
-                    showSlides(slideIndex = n);
-                }
-
-                function showSlides(n) {
-                    var i;
-                    var slides = document.getElementsByClassName("mySlides");
-                    var dots = document.getElementsByClassName("dot");
-                    if (n > slides.length) {slideIndex = 1}
-                    if (n < 1) {slideIndex = slides.length}
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    slides[slideIndex-1].style.display = "block";
-                    dots[slideIndex-1].className += " active";
-                }
-            </script>
-        </section>-->
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 <!----------------------------------------------------------------->
 
         <!-- ABOUT-US -->
         <section class="about-us" id="about-us">
             <div class="what_we_do">
                 <h2>What we do</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos vitae dolor! Possimus dolorem sapiente perspiciatis ex aliquid, molestiae inventore repellat aut voluptate ipsum ad odio explicabo architecto incidunt natus ut voluptatum ea pariatur ducimus rem, quod distinctio. Voluptatum illo totam, eum praesentium quas a doloremque aperiam quo tenetur minima facilis, culpa vero assumenda explicabo soluta dolores id aliquam dolor voluptas nemo est accusantium aliquid iste rem. Atque aut voluptatibus voluptate nobis quasi ipsum quos, saepe autem soluta omnis voluptas et iste iure in accusantium voluptates molestiae distinctio deleniti nostrum ipsa eos dolores perspiciatis? Harum est atque dignissimos error sapiente facilis ducimus qui vero, ea iste architecto quo, obcaecati libero ipsum at beatae minima autem maiores ab, ipsam sequi eligendi? Exercitationem libero vitae debitis dolorum sed earum corrupti saepe molestias quod facilis laborum ipsum quos pariatur excepturi vel aliquam magnam fugit numquam officiis similique, aperiam illum accusantium dolores aut? Cupiditate placeat nam atque. Quae dolorum laborum provident aliquid quam magni? Recusandae, necessitatibus voluptates eligendi labore suscipit molestiae dolore sint fugit possimus, ducimus quam consequuntur corrupti aperiam. Consequatur cum reprehenderit et ad hic aliquid a, autem reiciendis quia. Doloribus, autem suscipit, repudiandae ratione soluta aspernatur ab quia necessitatibus, molestias odit magni animi minus aliquam illum placeat facilis incidunt! Assumenda ea aspernatur ipsam, animi autem et alias nobis esse dicta veritatis atque quibusdam, dignissimos est earum delectus quo reiciendis optio aut accusantium nam deserunt voluptatem architecto? Eius voluptate tenetur adipisci numquam accusantium dolorum, quae maiores, alias atque eaque ullam. Cupiditate, ducimus non!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos vitae dolor! Possimus dolorem sapiente perspiciatis ex aliquid, molestiae inventore repellat aut voluptate ipsum ad odio explicabo architecto incidunt natus ut voluptatum ea pariatur ducimus rem, quod distinctio. Voluptatum illo totam, eum praesentium quas a doloremque aperiam quo tenetur minima facilis, culpa vero assumenda explicabo soluta dolores id aliquam dolor voluptas nemo est accusantium aliquid iste rem. Atque aut voluptatibus v Exercitationem liberom officiis similique,  quia. Doloribus, autem suscipit, repudiandae ratione soluta aspernatur ab quia necessitatibus, molestias odit magni animi minus aliquam illum placeat facilis incidunt! Assumenda ea aspernatur ipsam, animi autem et alias nobis esse dicta veritatis atque quibusdam, dignissimos est earum delectus quo reiciendis optio aut accusantium nam deserunt voluptatem architecto? Eius voluptate tenetur adipisci numquam accusantium dolorum, quae maiores, alias atque eaque ullam. Cupiditate, ducimus non!</p>
             </div>
             <br>
             <br>
@@ -93,132 +125,55 @@
 
 
         <!-- FEATURES-->
-        <section id="features">
-            <div  id="overlay" class="features" >
-                <div><h2>Features</h2></div>
-                <br>
-                <br>
-
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <h3>Ease of Transactions</h3>
-                            <p>Some text</p>
-                            <p>Some text</p>
-                        </div>
+        <section class="features" id="features">
+            <h2 style="text-decoration: underline; text-align: center; color: #7f6ced; margin: 20px;">FEATURES</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <h3>Feature 1</h3>
+                        <p>Some text</p>
+                        <p>Some text</p>
                     </div>
+                </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <h3>Pooled Fund Distribution</h3>
-                            <p>Some text</p>
-                            <p>Some text</p>
-                        </div>
+                <div class="column">
+                    <div class="card">
+                        <h3>Feature 2</h3>
+                        <p>Some text</p>
+                        <p>Some text</p>
                     </div>
+                </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <h3>Easy Wallet</h3>
-                            <p>Some text</p>
-                            <p>Some text</p>
-                        </div>
+                <div class="column">
+                    <div class="card">
+                        <h3>Feature 3</h3>
+                        <p>Some text</p>
+                        <p>Some text</p>
                     </div>
+                </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <h3> Financial reporting</h3>
-                            <p>Some text</p>
-                            <p>Some text</p>
-                        </div>
+                <div class="column">
+                    <div class="card">
+                        <h3>Feature 4</h3>
+                        <p>Some text</p>
+                        <p>Some text</p>
                     </div>
                 </div>
             </div>
         </section>
 
-
-<!---------------------------------------------------------------
-
-        <div class="features-container">
-            <div class="card">
-                <h3 class="title">Feature 1</h3>
-                <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                </div>
-                <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stroke" cx="60" cy="60" r="50"/>
-                    </svg>
-                </div>
+        <!-- CLIENTS -->
+        <!-- ABOUT-US -->
+        <section class="features" id="partners">
+            <div class="partners">
+                <h2> Partners</h2>
             </div>
-            <div class="card">
-                <h3 class="title">Feature 2</h3>
-                <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                </div>
-                <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stroke" cx="60" cy="60" r="50"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="card">
-                <h3 class="title">Feature 3</h3>
-                <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                </div>
-                <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stroke" cx="60" cy="60" r="50"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="card">
-                <h3 class="title">Feature 4</h3>
-                <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                </div>
-                <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stroke" cx="60" cy="60" r="50"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="card">
-                <h3 class="title"> Feature 5</h3>
-                <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                </div>
-                <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stroke" cx="60" cy="60" r="50"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="card">
-                <h3 class="title">Feature 6</h3>
-                <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                </div>
-                <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stroke" cx="60" cy="60" r="50"/>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        ------------------------------------------------------------------------------------------->
+        </section>
 
     </div>
-    <?php
-    include_once "./footer.php"
-    ?>
 </div>
-
+<?php
+include_once "./footer.php"
+?>
 </body>
 </html>
