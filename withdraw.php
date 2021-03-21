@@ -41,5 +41,5 @@
     </table>
     <p class="uploader">upload deposit contributors</p>
     <button class="upload">Upload</button>
-    <img class="stripe_logo" src="./assests/images/512px-Stripe_Logo,_revised_2016.svg.png" alt="Stripe logo">
+    <img class="stripe_logo" src="/assets/images/stripe-logo.png" alt="Stripe logo">
 </div>

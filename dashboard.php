@@ -20,8 +20,8 @@ include_once "./dashboard-header.php"
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#" class="active" onclick="openPage('dashboard')">Dashboard</a>
             <a href="#" onclick="openPage('wallet')">Wallet</a>
-            <a href="#" onclick="openPage('deposit')">Deposit</a>
-            <a href="#" onclick="openPage('withdraw')">Withdraw</a>
+<!--            <a href="#" onclick="openPage('deposit')">Deposit</a>-->
+<!--            <a href="#" onclick="openPage('withdraw')">Withdraw</a>-->
             <a href="#" onclick="openPage('members')">Members</a>
             <a href="#" onclick="openPage('loans')">Loans</a>
             <a href="#" onclick="openPage('clients')">Clients</a>
@@ -57,9 +57,9 @@ include_once "./dashboard-header.php"
 
                 <div id="wallet" class="w3-container page" style="display:none;  ">
                     <h2 >Wallet</h2>
-                    <!--<?php
+                    <?php
                     include_once "./wallet.php"
-                    ?>-->
+                    ?>
                 </div>
 
                 <div id="deposit" class="w3-container page" style="display:none;  ">
@@ -74,31 +74,45 @@ include_once "./dashboard-header.php"
 
                 <div id="members" class="w3-container page" style="display:none;  ">
                     <h2 >Members</h2>
-                    <p>some text</p>
+                    <?php
+                    include_once "./members.php"
+                    ?>
                 </div>
                 <div id="loans" class="w3-container page" style="display:none;  ">
                     <h2 >Loans</h2>
-                    <p>some text</p>
+                    <?php
+                    include_once "./loans.php"
+                    ?>
                 </div>
                 <div id="clients" class="w3-container page" style="display:none;  ">
                     <h2 >Clients</h2>
-                    <p>some text</p>
+                    <?php
+                    include_once "./clients.php"
+                    ?>
                 </div>
                 <div id="messaging" class="w3-container page" style="display:none;  ">
                     <h2 >Messaging</h2>
-                    <p>some text</p>
+                    <?php
+                    include_once "./messaging.php"
+                    ?>
                 </div>
                 <div id="investments" class="w3-container page" style="display:none;  ">
                     <h2 >Investments</h2>
-                    <p>some text</p>
+                    <?php
+                    include_once "./investments.php"
+                    ?>
                 </div>
                 <div id="reports" class="w3-container page" style="display:none;  ">
                     <h2 >Reports</h2>
-                    <p>some text</p>
+                    <?php
+                    include_once "./reports.php"
+                    ?>
                 </div>
                 <div id="settings" class="w3-container page" style="display:none;  ">
                     <h2 >Settings</h2>
-                    <p>some text</p>
+                    <?php
+                    include_once "./settings.php"
+                    ?>
 
 
                 <script>

@@ -1,21 +1,26 @@
 
-<div class="tab">
-    <button class="tablinks" onclick="openPage(event, 'deposit')">DEPOSIT</button>
-    <button class="tablinks" onclick="openPage(event, 'withdraw')">WITHDRAW</button>
+
+<div class="tab responsive">
+    <button class="tablinks" onclick="openTab(event, 'deposit')" style="width: 200px; height: 50px;">Deposit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="tablinks" onclick="openTab(event, 'withdraw')" style="width: 200px; height: 50px;">Withdraw</button>
+
 </div>
 
 <div id="deposit" class="tabcontent">
-    <h3>London</h3>
-    <p>London is the capital city of England.</p>
+    <h3>DEPOSIT</h3>
+    <?php
+    include_once "./deposit.php"
+    ?>
 </div>
 
 <div id="withdraw" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
+    <h3>Withdraw</h3>
+    <?php
+    include_once "./withdraw.php"
+    ?>
 </div>
-
 <script>
-    function openPage(evt, pageName) {
+    function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -25,7 +30,7 @@
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(pageName).style.display = "block";
+        document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
     }
 </script>

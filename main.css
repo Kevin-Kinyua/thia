@@ -9,6 +9,7 @@ html {
 
 #content-wrap {
     /*padding-bottom: 2.5rem;    !* Footer height *!*/
+    margin-top: 40px;
 }
 
 
@@ -177,16 +178,17 @@ img {vertical-align: middle;}
     padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
-    height: 100px;
+    height: 200px;
+    margin-bottom: 20px;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
 /*CLIENTS*/
 
 .partners {
-    background-color:  #7f6ced;
+    /* background-color:  #7f6ced; */
     margin-top: 40px;
-    color: white;
+    color: #7f6ced;
     text-align: center;
     width: auto;
     height: 350px;
@@ -456,40 +458,132 @@ button:hover {
 
 /* //////////////////////////////////////////////////////////////////////////////// */
 /*WALLET CONTENT*/
+
+
 /* Style the tab */
-/*.tab {*/
-/*    overflow: hidden;*/
-/*    border: 1px solid #ccc;*/
-/*    background-color: #f1f1f1;*/
-/*    !*display: inline-block;*!*/
-/*}*/
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc;
+    background-color: #f1f1f1; */
+    float: right;
+    margin-bottom: 50px;
 
-/*!* Style the buttons inside the tab *!*/
-/*.tab button {*/
-/*    background-color: inherit;*/
-/*    border: none;*/
-/*    outline: none;*/
-/*    cursor: pointer;*/
-/*    padding: 14px 16px;*/
-/*    transition: 0.3s;*/
-/*    font-size: 17px;*/
-/*}*/
+}
 
-/*!* Change background color of buttons on hover *!*/
-/*.tab button:hover {*/
-/*    background-color: #ddd;*/
-/*}*/
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: #7f6ced;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: ; white;
+    margin-bottom: 50px;
+    margin-right: 30px;
+    box-shadow: #717171;
+}
 
-/*!* Create an active/current tablink class *!*/
-/*.tab button.active {*/
-/*    background-color: #ccc;*/
-/*}*/
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
 
-/*!* Style the tab content *!*/
-/*.tabcontent {*/
-/*    display: none;*/
-/*    padding: 6px 12px;*/
-/*    border: 1px solid #ccc;*/
-/*    border-top: none;*/
-/*    float:right;*/
-/*}*/
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/*DEPOSIT*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+.uploader{
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 25px;
+    margin-left: 60%;
+    float: left;
+}
+
+.upload{
+    width: 350px;
+    height: 40px;
+    float: right;
+    margin-top: 20px;
+}
+
+.stripe_logo{
+    width: 200px;
+    float: right;
+    background-color: lemonchiffon;
+    margin-top: 50px;
+    margin-left: 70%;
+}
+
+
+.uploader{
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 25px;
+    margin-left: 60%;
+    float: left;
+}
+
+.upload{
+    width: 350px;
+    height: 40px;
+    float: right;
+    margin-top: 20px;
+}
+
+.stripe_logo{
+    width: 200px;
+    height:50px;
+    float: right;
+    /* background-color: lemonchiffon; */
+    margin-top: 50px;
+    margin-left: 70%;
+}
+
+.options{
+    width: 100%;
+    display: inline-block;
+    grid-area: options;
+}
+
+.options button {
+    width: 31.5%;
+    height: 70px;
+    margin-bottom: 20px;
+    background-color: grey;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 10px;
+
+}

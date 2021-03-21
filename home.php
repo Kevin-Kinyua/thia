@@ -6,7 +6,6 @@
     <title>THIA inc.</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="navigation.css">
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.cs
     <?php
     include_once "./header.php"
@@ -15,11 +14,6 @@
 * {
   box-sizing: border-box;
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 /* Float four columns side by side */
 .column {
   float: left;
@@ -32,7 +26,6 @@ body {
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
     display: table;
     clear: both;
     }

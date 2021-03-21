@@ -4,6 +4,7 @@
 .header {
     overflow: hidden;
     background-color: #7f6ced;
+    position: fixed;
 }
 
 .header a {
@@ -14,6 +15,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    position: fixed;
 }
 
 .header a:hover {
