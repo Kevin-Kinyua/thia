@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,14 +6,17 @@
     <title>THIA inc.</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.cs
-    <?php
-    include_once "./header.php"
-    ?>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
     <style>
 * {
   box-sizing: border-box;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Float four columns side by side */
 .column {
   float: left;
@@ -26,31 +29,35 @@
 
 /* Clear floats after the columns */
 .row:after {
-    display: table;
-    clear: both;
-    }
+  content: "";
+  display: table;
+  clear: both;
+}
 
-    /* Responsive columns */
-    @media screen and (max-width: 600px) {
-    .column {
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
-    }
-    }
+  }
+}
 
-    /* Style the counter cards */
-    .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-    }
-    </style>
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
 </head>
 <body>
 
 <div id="page-container">
+<?php
+    include_once "./header.php"
+    ?>
 
     <div id="content-wrap">
         <!-- CAROUSEL-->
@@ -155,6 +162,7 @@
             </div>
         </section>
 
+    
         <!-- CLIENTS -->
         <!-- ABOUT-US -->
         <section class="features" id="partners">

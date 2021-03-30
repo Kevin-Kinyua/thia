@@ -27,7 +27,7 @@
                     <div class="column">
                         <div class="auth-card">
 
-                            <form action="/action_page.php" style="border:1px solid #ccc">
+                            <form action="success-register.php" style="border:1px solid #ccc">
                                 <div class="container">
                                     <h1>Register with us</h1>
                                     <p>Please fill in this form to create an account.</p>
@@ -50,7 +50,7 @@
 
                                     <div class="clearfix">
                                         <button type="button" class="cancelbtn">Cancel</button>
-                                        <button type="submit" class="signupbtn">Sign Up</button>
+                                        <a href="success-register.php"><button type="submit" class="signupbtn">Sign Up</button></a>
                                     </div>
                                 </div>
                             </form>

@@ -1,5 +1,4 @@
 
-
 <div class="tab responsive">
     <button class="tablinks" onclick="openTab(event, 'deposit')" style="width: 200px; height: 50px;">Deposit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button class="tablinks" onclick="openTab(event, 'withdraw')" style="width: 200px; height: 50px;">Withdraw</button>
@@ -7,14 +6,12 @@
 </div>
 
 <div id="deposit" class="tabcontent">
-    <h3>DEPOSIT</h3>
     <?php
     include_once "./deposit.php"
     ?>
 </div>
 
 <div id="withdraw" class="tabcontent">
-    <h3>Withdraw</h3>
     <?php
     include_once "./withdraw.php"
     ?>
