@@ -6,6 +6,12 @@
     <title>THIA inc.</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <style>
 * {
   box-sizing: border-box;
@@ -54,29 +60,26 @@ body {
 <?php
 include_once "./dashboard-header.php"
 ?>
-<div id="page-container">
-
-    <div id="content-wrap">
-
+<!--SIDENAV--------------------------------------------------------------------------------------------->
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#" class="active" onclick="openPage('dashboard')">Dashboard</a>
-            <a href="#" onclick="openPage('wallet')">Wallet</a>
+            <a href="#wallet" onclick="openPage('wallet')">Wallet</a>
 <!--            <a href="#" onclick="openPage('deposit')">Deposit</a>-->
 <!--            <a href="#" onclick="openPage('withdraw')">Withdraw</a>-->
-            <a href="#" onclick="openPage('members')" onclick="closeNav()">Members</a>
-            <a href="#" onclick="openPage('loans')">Loans</a>
-            <a href="#" onclick="openPage('clients')">Clients</a>
-            <a href="" onclick="openPage('messaging')">Messaging</a>
-            <a href="" onclick="openPage('investments')">Investments</a>
-            <a href="" onclick="openPage('reports')">Reports</a>
-            <a href="" onclick="openPage('settings')">Settings</a>
+            <a href="#members" onclick="openPage('members')" onclick="closeNav()">Members</a>
+            <a href="#loans" onclick="openPage('loans')">Loans</a>
+            <a href="#clients" onclick="openPage('clients')">Clients</a>
+            <a href="#messaging" onclick="openPage('messaging')">Messaging</a>
+            <a href="#investments" onclick="openPage('investments')">Investments</a>
+            <a href="#reports" onclick="openPage('reports')">Reports</a>
+            <a href="#settings" onclick="openPage('settings')">Settings</a>
 <!--            <a href="#" onclick="openPage('contact')">Contact</a>-->
         </div>
 
         <script>
             function openNav() {
-                document.getElementById("mySidenav").style.width = "180px";
+                document.getElementById("mySidenav").style.width = "190px";
             }
 
             function closeNav() {
@@ -84,53 +87,21 @@ include_once "./dashboard-header.php"
             }
         </script>
 
-        <section id="dashboard" class="dashboard-content" >
-            <div  id="overlay" >
-                <br>
-                <br>
+<!----------------------------------------------------------------------------------------------->
 
+<div id="main">
+ <!--<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; open menu</span>-->
+ <section id="dashboard" class="dashboard-content" >
 
-
-
-                <div id="dashboard" class="w3-container  page" >
-                    <h2>Dashboard</h2>
-                    <!--
-                        <div class="row">
-                        <div class="column">
-                            <div class="card">
-                            <h3>Card 1</h3>
-                            <p>Some text</p>
-                            <p>Some text</p>
-                            </div>
-                        </div>
-
-                        <div class="column">
-                            <div class="card">
-                            <h3>Card 2</h3>
-                            <p>Some text</p>
-                            <p>Some text</p>
-                            </div>
-                        </div>
+                <div id="dashboard" class="w3-container  page">
+                    <div class="dashboard-header">
+                    <br>
+                        <h2> Dashboard</h2>
                         
-                        <div class="column">
-                            <div class="card">
-                            <h3>Card 3</h3>
-                            <p>Some text</p>
-                            <p>Some text</p>
-                            </div>
-                        </div>
-                        
-                        <div class="column">
-                            <div class="card">
-                            <h3>Card 4</h3>
-                            <p>Some text</p>
-                            <p>Some text</p>
-                            </div>
-                        </div>
-                        </div>-->
-
-                        
-                        <div id="piechart" class="responsive" style="margin-top: -20px; margin-left: 450px; flex-wrap: wrap; align-content: center;"></div>
+                    </div>
+                   
+                        <!--DATA SETS-->
+                        <div id="piechart" class=" responsive" style=""></div>
 
                         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -151,23 +122,24 @@ include_once "./dashboard-header.php"
                         ]);
 
                         // Optional; add a title and set the width and height of the chart
-                        var options = {'title':'Group Data Visualization', 'width':850, 'height':700};
+                        var options = {'title':'Group Data Visualization', 'width':650, 'height':500};
 
                         // Display the chart inside the <div> element with id="piechart"
                         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
                         chart.draw(data, options);
                         }
                         </script>
+                        <!--DATA SETS END-->
 
                 </div>
 
-                <div id="wallet" class="w3-container page" style="display:none;  ">
-                    <h2 >Wallet</h2>
+                <div id="wallet" class="w3-container page" style="display:none; margin-top: -60px;">
+                    
                     <?php
                     include_once "./wallet.php"
                     ?>
                 </div>
-
+                
                 <div id="deposit" class="w3-container page" style="display:none;  ">
                     <h2 >Deposit</h2>
                     <p>some text</p>
@@ -178,44 +150,44 @@ include_once "./dashboard-header.php"
                     <p>some text</p>
                 </div>
 
-                <div id="members" class="w3-container page" style="display:none;  ">
-                    <h2 >Members</h2>
+                <div id="members" class="w3-container page" style="display:none; margin-top: -60px;">
+                   
                     <?php
                     include_once "./members.php"
                     ?>
                 </div>
-                <div id="loans" class="w3-container page" style="display:none;  ">
-                    <h2 >Loans</h2>
+                <div id="loans" class="w3-container page" style="display:none; margin-top: -60px;">
+                    
                     <?php
                     include_once "./loans.php"
                     ?>
                 </div>
-                <div id="clients" class="w3-container page" style="display:none;  ">
-                    <h2 >Clients</h2>
+                <div id="clients" class="w3-container page" style="display:none; margin-top: -60px;">
+                   
                     <?php
                     include_once "./clients.php"
                     ?>
                 </div>
-                <div id="messaging" class="w3-container page" style="display:none;  ">
-                    <h2 >Messaging</h2>
+                <div id="messaging" class="w3-container page" style="display:none; margin-top: -60px;">
+               
                     <?php
                     include_once "./messaging.php"
                     ?>
                 </div>
-                <div id="investments" class="w3-container page" style="display:none;  ">
-                    <h2 >Investments</h2>
+                <div id="investments" class="w3-container page" style="display:none; margin-top: -60px;">
+               
                     <?php
                     include_once "./investments.php"
                     ?>
                 </div>
-                <div id="reports" class="w3-container page" style="display:none;  ">
-                    <h2 >Reports</h2>
+                <div id="reports" class="w3-container page" style="display:none; margin-top: -60px;">
+             
                     <?php
                     include_once "./reports.php"
                     ?>
                 </div>
-                <div id="settings" class="w3-container page" style="display:none;  ">
-                    <h2 >Settings</h2>
+                <div id="settings" class="w3-container page" style="display:none; margin-top: -60px;">
+            
                     <?php
                     include_once "./settings.php"
                     ?>
@@ -231,18 +203,22 @@ include_once "./dashboard-header.php"
                         document.getElementById(pageName).style.display = "block";
                     }
                 </script>
-
-
-
-            </div>
         </section>
-
-
-    </div>
-    <?php
-    include_once "./footer.php"
-    ?>
 </div>
+
+<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "190px";
+  document.getElementById("main").style.marginLeft = "190px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
 
 </body>
 </html>

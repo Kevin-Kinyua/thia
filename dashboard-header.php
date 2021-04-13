@@ -17,7 +17,7 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
-        <span style="font-size:25px;cursor:pointer; color:white; margin-left: 30px;" onclick="openNav()">&#9776; MENU</span>
+  <span style="font-size:20px;cursor:pointer;color: white; margin-top: 40px; margin-left: 20px;" onclick="openNav()">&#9776; open menu</span>
     </div>
     <script>
         function myFunction() {

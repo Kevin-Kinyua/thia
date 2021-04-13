@@ -1,59 +1,49 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <div class="messaging-header">
+    <br>
+      <h2> Messages</h2>
+  </div>
 
+<div class="w3-container">
 
-<!--<style>
-* {
-  box-sizing: border-box;
-}
+  <div class="w3-row">
+    <a href="javascript:void(0)" onclick="openTab(event, 'Emails');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">EMAILS</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'Notices');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">NOTICES</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'SMS');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">SMS</div>
+    </a>
+  </div>
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+  <div id="Emails" class="w3-container city" style="display:none">
+    <h2>Emails</h2>
 
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
+  </div>
 
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
+  <div id="Notices" class="w3-container city" style="display:none">
+    <h2>Notices</h2>
+  </div>
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  <div id="SMS" class="w3-container city" style="display:none">
+    <h2>SMS</h2>
+  </div>
+</div>
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
+<script>
+function openTab(evt, tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
   }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-red";
 }
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-</style>
-<div class="row">
-<div class="column">
-  <div class="card">..</div>
-</div>
-<div class="column">
-  <div class="card">..</div>
-</div>
-<div class="column">
-  <div class="card">..</div>
-</div>
-<div class="column">
-  <div class="card">..</div>
-</div>
-</div>-->
+</script>

@@ -6,6 +6,12 @@
     <title>THIA inc.</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="navigation.css">
+    
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -14,7 +20,6 @@
     <?php
     include_once "./header.php"
     ?>
-    <div id="content-wrap">
 
 
         <section id="sign-in">
@@ -50,7 +55,7 @@
 
                                     <div class="clearfix">
                                         <button type="button" class="cancelbtn">Cancel</button>
-                                        <a href="success-register.php"><button type="submit" class="signupbtn">Sign Up</button></a>
+                                        <a href="success-register.php"><button type="submit" class="signinbtn">Sign Up</button></a>
                                     </div>
                                 </div>
                             </form>
@@ -63,8 +68,6 @@
             </div>
         </section>
 
-
-    </div>
     <?php
     include_once "./footer.php"
     ?>
